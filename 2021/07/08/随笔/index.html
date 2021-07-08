@@ -1,0 +1,2620 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>随笔 | WhyPilotXia的个人博客</title><meta name="keywords" content="图片,封面,注入,王者,php,请求"><meta name="author" content="沫欢"><meta name="copyright" content="沫欢"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.如何自定义博客封面添加cover变数并赋值即可，如图：  2.关于王者荣耀时隔20天，我终于忍不住又下回了王者荣耀，明天开玩。 之前设计的王者荣耀隐藏分查询系统由于王者营地后台更新，暂时无法使用了，只能凭感觉降ELO分，“能躺绝不C” 不知道从王者四星掉到什么段了。 3.研究学历案学习平台今天闲得无聊，开始深入学历案学习平台的研究。 目的：找到上传视频等文件的方法，把它从图床升级成无限制外链云">
+<meta property="og:type" content="article">
+<meta property="og:title" content="随笔">
+<meta property="og:url" content="https://whypilotxia.github.io/2021/07/08/%E9%9A%8F%E7%AC%94/index.html">
+<meta property="og:site_name" content="WhyPilotXia的个人博客">
+<meta property="og:description" content="1.如何自定义博客封面添加cover变数并赋值即可，如图：  2.关于王者荣耀时隔20天，我终于忍不住又下回了王者荣耀，明天开玩。 之前设计的王者荣耀隐藏分查询系统由于王者营地后台更新，暂时无法使用了，只能凭感觉降ELO分，“能躺绝不C” 不知道从王者四星掉到什么段了。 3.研究学历案学习平台今天闲得无聊，开始深入学历案学习平台的研究。 目的：找到上传视频等文件的方法，把它从图床升级成无限制外链云">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg">
+<meta property="article:published_time" content="2021-07-08T14:41:39.000Z">
+<meta property="article:modified_time" content="2021-07-08T15:19:03.246Z">
+<meta property="article:author" content="沫欢">
+<meta property="article:tag" content="图片">
+<meta property="article:tag" content="封面">
+<meta property="article:tag" content="注入">
+<meta property="article:tag" content="王者">
+<meta property="article:tag" content="php">
+<meta property="article:tag" content="请求">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://whypilotxia.github.io/2021/07/08/%E9%9A%8F%E7%AC%94/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '随笔',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-08 23:19:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">WhyPilotXia的个人博客</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">随笔</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-08T14:41:39.000Z" title="发表于 2021-07-08 22:41:39">2021-07-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-08T15:19:03.246Z" title="更新于 2021-07-08 23:19:03">2021-07-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>39分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="随笔"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-如何自定义博客封面"><a href="#1-如何自定义博客封面" class="headerlink" title="1.如何自定义博客封面"></a>1.如何自定义博客封面</h1><p>添加cover变数并赋值即可，如图：</p>
+<p><img src="http://cdnjson.com/images/2021/07/08/QQ20210708172253.png"></p>
+<h1 id="2-关于王者荣耀"><a href="#2-关于王者荣耀" class="headerlink" title="2.关于王者荣耀"></a>2.关于王者荣耀</h1><p>时隔20天，我终于忍不住又下回了王者荣耀，明天开玩。</p>
+<p>之前设计的王者荣耀隐藏分查询系统由于王者营地后台更新，暂时无法使用了，只能凭感觉降ELO分，“能躺绝不C”</p>
+<p>不知道从王者四星掉到什么段了。</p>
+<h1 id="3-研究学历案学习平台"><a href="#3-研究学历案学习平台" class="headerlink" title="3.研究学历案学习平台"></a>3.研究学历案学习平台</h1><p>今天闲得无聊，开始深入学历案学习平台的研究。</p>
+<p>目的：找到上传视频等文件的方法，把它从图床升级成无限制外链云盘。</p>
+<p>于是开始瞎捣鼓这个网站，试图从作业上传接口破解出无限制上传方法，先乱发点请求试试。</p>
+<p>发送如下请求：</p>
+<h2 id="GET-api-v1-HTTP-1-1"><a href="#GET-api-v1-HTTP-1-1" class="headerlink" title="GET /api/v1/ HTTP/1.1"></a>GET /api/v1/ HTTP/1.1</h2><p>服务器回复：</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Page not found at /api/v1/</title>
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <style type="text/css">html * { padding:0; margin:0; }
+      body * { padding:10px 20px; }
+      body * * { padding:0; }
+      body { font:small sans-serif; background:#eee; color:#000; }
+      body>div { border-bottom:1px solid #ddd; }
+      h1 { font-weight:normal; margin-bottom:.4em; }
+      h1 span { font-size:60%; color:#666; font-weight:normal; }
+      table { border:none; border-collapse: collapse; width:100%; }
+      td, th { vertical-align:top; padding:2px 3px; }
+      th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+      #info { background:#f6f6f6; }
+      #info ol { margin: 0.5em 4em; }
+      #info ol li { font-family: monospace; }
+      #summary { background: #ffc; }
+      #explanation { background:#eee; border-bottom: 0px none; }</style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>Page not found
+        <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th>Request Method:</th>
+          <td>GET</td>
+        </tr>
+        <tr>
+          <th>Request URL:</th>
+          <td>https://edu.51yxxg.com/api/v1/</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>Using the URLconf defined in
+        <code>edu.urls</code>
+        ,
+        Django tried these URL patterns, in this order:</p>
+      <ol>
+        <li>^api/v1/util/</li>
+        <li>^api/v1/user/</li>
+        <li>^api/v1/school/</li>
+        <li>^api/v1/course/</li>
+        <li>^api/v1/quiz/</li>
+        <li>^api/v1/live/</li>
+        <li>^api/v1/wechat/</li>
+        <li>^api/v1/pay/</li>
+      </ol>
+      <p>The current path,
+        <code>api/v1/</code>
+        , didn't match any of these.</p>
+    </div>
+    <div id="explanation">
+      <p>You're seeing this error because you have
+        <code>DEBUG = True</code>
+        in
+        your Django settings file. Change that to
+        <code>False</code>
+        , and Django
+        will display a standard 404 page.</p>
+    </div>
+  </body>
+</html>
+
+<p>跟着指引继续发送：</p>
+<h2 id="GET-api-v1-live-HTTP-1-1"><a href="#GET-api-v1-live-HTTP-1-1" class="headerlink" title="GET /api/v1/live/ HTTP/1.1"></a>GET /api/v1/live/ HTTP/1.1</h2><p>服务器回复：</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Page not found at /api/v1/live/</title>
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <style type="text/css">html * { padding:0; margin:0; }
+      body * { padding:10px 20px; }
+      body * * { padding:0; }
+      body { font:small sans-serif; background:#eee; color:#000; }
+      body>div { border-bottom:1px solid #ddd; }
+      h1 { font-weight:normal; margin-bottom:.4em; }
+      h1 span { font-size:60%; color:#666; font-weight:normal; }
+      table { border:none; border-collapse: collapse; width:100%; }
+      td, th { vertical-align:top; padding:2px 3px; }
+      th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+      #info { background:#f6f6f6; }
+      #info ol { margin: 0.5em 4em; }
+      #info ol li { font-family: monospace; }
+      #summary { background: #ffc; }
+      #explanation { background:#eee; border-bottom: 0px none; }</style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>Page not found
+        <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th>Request Method:</th>
+          <td>GET</td>
+        </tr>
+        <tr>
+          <th>Request URL:</th>
+          <td>https://edu.51yxxg.com/api/v1/live/</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>Using the URLconf defined in
+        <code>edu.urls</code>
+        ,
+        Django tried these URL patterns, in this order:</p>
+      <ol>
+        <li>^api/v1/util/</li>
+        <li>^api/v1/user/</li>
+        <li>^api/v1/school/</li>
+        <li>^api/v1/course/</li>
+        <li>^api/v1/quiz/</li>
+        <li>^api/v1/live/
+          room/
+          [name='live-room-view']</li>
+        <li>^api/v1/live/
+          room/temp/
+          [name='live-temp-room-view']</li>
+        <li>^api/v1/live/
+          room/temp/record/
+          [name='live-temp-room-record-view']</li>
+        <li>^api/v1/live/
+          room/batch/
+          [name='live-room-batch-view']</li>
+        <li>^api/v1/live/
+          room/white/export/
+          [name='live-room-export-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/
+          [name='live-room-detail-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/active/
+          [name='live-room-active-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/copy/
+          [name='live-room-copy-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/token/
+          [name='live-room-token-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/user/online/
+          [name='live-room-users-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/white/
+          [name='live-room-white-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/white/zombie/
+          [name='live-room-white-zombie-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/material/
+          [name='live-room-material-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/code/
+          [name='live-room-code-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/user/random/
+          [name='live-room-user-random-view']</li>
+        <li>^api/v1/live/
+          room/material/&lt;int:pk&gt;/
+          [name='live-room-material-detail-view']</li>
+        <li>^api/v1/live/
+          room/material/&lt;int:pk&gt;/question/
+          [name='live-room-question-view']</li>
+        <li>^api/v1/live/
+          room/code/&lt;int:pk&gt;/
+          [name='live-room-code-detail-view']</li>
+        <li>^api/v1/live/
+          room/code/&lt;int:code&gt;/user/&lt;int:user&gt;/
+          [name='live-room-code-user-view']</li>
+        <li>^api/v1/live/
+          room/user/code/&lt;int:pk&gt;/
+          [name='live-room-user-code-view']</li>
+        <li>^api/v1/live/
+          room/teacher/code/&lt;int:pk&gt;/
+          [name='live-room-teacher-code-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/config/
+          [name='live-room-config-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/homework/
+          [name='live-room-homework-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/classroom/homework/
+          [name='live-room-classroom-homework-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/homework/user/
+          [name='live-room-homework-user-view']</li>
+        <li>^api/v1/live/
+          room/homework/&lt;int:pk&gt;/
+          [name='live-room-homework-detail-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/note/
+          [name='live-room-note-view']</li>
+        <li>^api/v1/live/
+          room/note/&lt;int:pk&gt;/
+          [name='live-room-note-detail-view']</li>
+        <li>^api/v1/live/
+          record/
+          [name='live-record-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/record/info/
+          [name='live-record-info-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/record/report/
+          [name='live-record-report-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/action/
+          [name='live-action-view']</li>
+        <li>^api/v1/live/
+          room/admin/&lt;int:pk&gt;/history/
+          [name='live-admin-history-view']</li>
+        <li>^api/v1/live/
+          room/&lt;int:pk&gt;/status/
+          [name='live-status-view']</li>
+        <li>^api/v1/live/
+          room/record/callback/
+          [name='live-record-callback-view']</li>
+        <li>^api/v1/live/
+          room/tag/
+          [name='live-room-tag-view']</li>
+        <li>^api/v1/wechat/</li>
+        <li>^api/v1/pay/</li>
+      </ol>
+      <p>The current path,
+        <code>api/v1/live/</code>
+        , didn't match any of these.</p>
+    </div>
+    <div id="explanation">
+      <p>You're seeing this error because you have
+        <code>DEBUG = True</code>
+        in
+        your Django settings file. Change that to
+        <code>False</code>
+        , and Django
+        will display a standard 404 page.</p>
+    </div>
+  </body>
+</html>
+
+<p>有点东西啊！</p>
+<p>其他目录内容一样充实，不再列举。</p>
+<p>发现结尾必须是/，故意去掉：</p>
+<h2 id="POST-api-v1-live-record-HTTP-1-1"><a href="#POST-api-v1-live-record-HTTP-1-1" class="headerlink" title="POST /api/v1/live/record HTTP/1.1"></a>POST /api/v1/live/record HTTP/1.1</h2><p>服务器回复：</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="robots" content="NONE,NOARCHIVE">
+    <title>RuntimeError
+      at /api/v1/live/record</title>
+    <style type="text/css">html * { padding:0; margin:0; }
+      body * { padding:10px 20px; }
+      body * * { padding:0; }
+      body { font:small sans-serif; background-color:#fff; color:#000; }
+      body>div { border-bottom:1px solid #ddd; }
+      h1 { font-weight:normal; }
+      h2 { margin-bottom:.8em; }
+      h2 span { font-size:80%; color:#666; font-weight:normal; }
+      h3 { margin:1em 0 .5em 0; }
+      h4 { margin:0 0 .5em 0; font-weight: normal; }
+      code, pre { font-size: 100%; white-space: pre-wrap; }
+      table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+      tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+      thead th {
+        padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+        font-weight:normal; font-size:11px; border:1px solid #ddd;
+      }
+      tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+      table.vars { margin:5px 0 2px 40px; }
+      table.vars td, table.req td { font-family:monospace; }
+      table td.code { width:100%; }
+      table td.code pre { overflow:hidden; }
+      table.source th { color:#666; }
+      table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+      ul.traceback { list-style-type:none; color: #222; }
+      ul.traceback li.frame { padding-bottom:1em; color:#666; }
+      ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+      div.context { padding:10px 0; overflow:hidden; }
+      div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+      div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+      div.context ol li pre { display:inline; }
+      div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }
+      div.context ol.context-line li span { position:absolute; right:32px; }
+      .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+      .user div.context ol li { color:#666; }
+      div.commands { margin-left: 40px; }
+      div.commands a { color:#555; text-decoration:none; }
+      .user div.commands a { color: black; }
+      #summary { background: #ffc; }
+      #summary h2 { font-weight: normal; color: #666; }
+      #explanation { background:#eee; }
+      #template, #template-not-exist { background:#f6f6f6; }
+      #template-not-exist ul { margin: 0 0 10px 20px; }
+      #template-not-exist .postmortem-section { margin-bottom: 3px; }
+      #unicode-hint { background:#eee; }
+      #traceback { background:#eee; }
+      #requestinfo { background:#f6f6f6; padding-left:120px; }
+      #summary table { border:none; background:transparent; }
+      #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+      #requestinfo h3 { margin-bottom:-1em; }
+      .error { background: #ffc; }
+      .specific { color:#cc3300; font-weight:bold; }
+      h2 span.commands { font-size:.7em;}
+      span.commands a:link {color:#5E5694;}
+      pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+      .append-bottom { margin-bottom: 10px; }</style>
+    <script type="text/javascript">function hideAll(elems) {
+        for (var e = 0; e < elems.length; e++) {
+          elems[e].style.display = 'none';
+        }
+      }
+      window.onload = function() {
+        hideAll(document.querySelectorAll('table.vars'));
+        hideAll(document.querySelectorAll('ol.pre-context'));
+        hideAll(document.querySelectorAll('ol.post-context'));
+        hideAll(document.querySelectorAll('div.pastebin'));
+      }
+      function toggle() {
+        for (var i = 0; i < arguments.length; i++) {
+          var e = document.getElementById(arguments[i]);
+          if (e) {
+            e.style.display = e.style.display == 'none' ? 'block': 'none';
+          }
+        }
+        return false;
+      }
+      function varToggle(link, id) {
+        toggle('v' + id);
+        var s = link.getElementsByTagName('span')[0];
+        var uarr = String.fromCharCode(0x25b6);
+        var darr = String.fromCharCode(0x25bc);
+        s.textContent = s.textContent == uarr ? darr : uarr;
+        return false;
+      }
+      function switchPastebinFriendly(link) {
+        s1 = "Switch to copy-and-paste view";
+        s2 = "Switch back to interactive view";
+        link.textContent = link.textContent.trim() == s1 ? s2: s1;
+        toggle('browserTraceback', 'pastebinTraceback');
+        return false;
+      }</script>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>RuntimeError
+        at /api/v1/live/record</h1>
+      <pre class="exception_value">You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to edu.51yxxg.com/api/v1/live/record/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre>
+      <table class="meta">
+        <tr>
+          <th>Request Method:</th>
+          <td>POST</td>
+        </tr>
+        <tr>
+          <th>Request URL:</th>
+          <td>https://edu.51yxxg.com/api/v1/live/record</td>
+        </tr>
+        <tr>
+          <th>Django Version:</th>
+          <td>2.0.2</td>
+        </tr>
+        <tr>
+          <th>Exception Type:</th>
+          <td>RuntimeError</td>
+        </tr>
+        <tr>
+          <th>Exception Value:</th>
+          <td>
+            <pre>You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to edu.51yxxg.com/api/v1/live/record/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre>
+          </td>
+        </tr>
+        <tr>
+          <th>Exception Location:</th>
+          <td>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py in get_full_path_with_slash, line 99</td>
+        </tr>
+        <tr>
+          <th>Python Executable:</th>
+          <td>/usr/bin/python3</td>
+        </tr>
+        <tr>
+          <th>Python Version:</th>
+          <td>3.5.2</td>
+        </tr>
+        <tr>
+          <th>Python Path:</th>
+          <td>
+            <pre>[&#39;/home/zhiyu/product/edu&#39;,
+              &#39;/usr/local/bin&#39;,
+              &#39;/usr/lib/python35.zip&#39;,
+              &#39;/usr/lib/python3.5&#39;,
+              &#39;/usr/lib/python3.5/plat-x86_64-linux-gnu&#39;,
+              &#39;/usr/lib/python3.5/lib-dynload&#39;,
+              &#39;/home/zhiyu/.local/lib/python3.5/site-packages&#39;,
+              &#39;/usr/local/lib/python3.5/dist-packages&#39;,
+              &#39;/usr/lib/python3/dist-packages&#39;]</pre>
+          </td>
+        </tr>
+        <tr>
+          <th>Server time:</th>
+          <td>Thu, 8 Jul 2021 21:56:07 +0800</td>
+        </tr>
+      </table>
+    </div>
+    <div id="traceback">
+      <h2>Traceback
+        <span class="commands">
+          <a href="#" onclick="return switchPastebinFriendly(this);">Switch to copy-and-paste view</a>
+        </span>
+      </h2>
+      <div id="browserTraceback">
+        <ul class="traceback">
+          <li class="frame django">
+            <code>/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py</code>
+            in
+            <code>inner</code>
+            <div class="context" id="c140222441152200">
+              <ol start="28" class="pre-context" id="pre140222441152200">
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>This decorator is automatically applied to all middleware to ensure that</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>no middleware leaks an exception and that the next middleware in the stack</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>can rely on getting a response instead of an exception.</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>&quot;&quot;&quot;</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>@wraps(get_response)</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>def inner(request):</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>try:</pre>
+                </li>
+              </ol>
+              <ol start="35" class="context-line">
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>response = get_response(request)</pre>
+                  <span>...</span>
+                </li>
+              </ol>
+              <ol start='36' class="post-context" id="post140222441152200">
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>except Exception as exc:</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>response = response_for_exception(request, exc)</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>return response</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre>return inner</pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre></pre>
+                </li>
+                <li onclick="toggle('pre140222441152200', 'post140222441152200')">
+                  <pre></pre>
+                </li>
+              </ol>
+            </div>
+            <div class="commands">
+              <a href="#" onclick="return varToggle(this, '140222441152200')">
+                <span>&#x25b6;</span>
+                Local vars</a>
+            </div>
+            <table class="vars" id="v140222441152200">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>exc</td>
+                  <td class="code">
+                    <pre>RuntimeError(&quot;You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to edu.51yxxg.com/api/v1/live/record/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.&quot;,)</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>get_response</td>
+                  <td class="code">
+                    <pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f8839f365c0&gt;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>request</td>
+                  <td class="code">
+                    <pre>&lt;WSGIRequest: POST &#39;/api/v1/live/record&#39;&gt;</pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="frame django">
+            <code>/usr/local/lib/python3.5/dist-packages/django/utils/deprecation.py</code>
+            in
+            <code>__call__</code>
+            <div class="context" id="c140222441150216">
+              <ol start="86" class="pre-context" id="pre140222441150216">
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>def __init__(self, get_response=None):</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>self.get_response = get_response</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>super().__init__()</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre></pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>def __call__(self, request):</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>response = None</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>if hasattr(self, &#39;process_request&#39;):</pre>
+                </li>
+              </ol>
+              <ol start="93" class="context-line">
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>response = self.process_request(request)</pre>
+                  <span>...</span>
+                </li>
+              </ol>
+              <ol start='94' class="post-context" id="post140222441150216">
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>if not response:</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>response = self.get_response(request)</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>if hasattr(self, &#39;process_response&#39;):</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>response = self.process_response(request, response)</pre>
+                </li>
+                <li onclick="toggle('pre140222441150216', 'post140222441150216')">
+                  <pre>return response</pre>
+                </li>
+              </ol>
+            </div>
+            <div class="commands">
+              <a href="#" onclick="return varToggle(this, '140222441150216')">
+                <span>&#x25b6;</span>
+                Local vars</a>
+            </div>
+            <table class="vars" id="v140222441150216">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>request</td>
+                  <td class="code">
+                    <pre>&lt;WSGIRequest: POST &#39;/api/v1/live/record&#39;&gt;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>response</td>
+                  <td class="code">
+                    <pre>None</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>self</td>
+                  <td class="code">
+                    <pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f8839f365c0&gt;</pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="frame django">
+            <code>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py</code>
+            in
+            <code>process_request</code>
+            <div class="context" id="c140222441149832">
+              <ol start="54" class="pre-context" id="pre140222441149832">
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre># Check for a redirect based on settings.PREPEND_WWW</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>host = request.get_host()</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>must_prepend = settings.PREPEND_WWW and host and not host.startswith(&#39;www.&#39;)</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>redirect_url = (&#39;%s://www.%s&#39; % (request.scheme, host)) if must_prepend else &#39;&#39;</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre></pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre># Check if a slash should be appended</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>if self.should_redirect_with_slash(request):</pre>
+                </li>
+              </ol>
+              <ol start="61" class="context-line">
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>path = self.get_full_path_with_slash(request)</pre>
+                  <span>...</span>
+                </li>
+              </ol>
+              <ol start='62' class="post-context" id="post140222441149832">
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>else:</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>path = request.get_full_path()</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre></pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre># Return a redirect if necessary</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>if redirect_url or path != request.get_full_path():</pre>
+                </li>
+                <li onclick="toggle('pre140222441149832', 'post140222441149832')">
+                  <pre>redirect_url += path</pre>
+                </li>
+              </ol>
+            </div>
+            <div class="commands">
+              <a href="#" onclick="return varToggle(this, '140222441149832')">
+                <span>&#x25b6;</span>
+                Local vars</a>
+            </div>
+            <table class="vars" id="v140222441149832">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>host</td>
+                  <td class="code">
+                    <pre>&#39;edu.51yxxg.com&#39;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>must_prepend</td>
+                  <td class="code">
+                    <pre>False</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>redirect_url</td>
+                  <td class="code">
+                    <pre>&#39;&#39;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>request</td>
+                  <td class="code">
+                    <pre>&lt;WSGIRequest: POST &#39;/api/v1/live/record&#39;&gt;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>self</td>
+                  <td class="code">
+                    <pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f8839f365c0&gt;</pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="frame django">
+            <code>/usr/local/lib/python3.5/dist-packages/django/middleware/common.py</code>
+            in
+            <code>get_full_path_with_slash</code>
+            <div class="context" id="c140222441150856">
+              <ol start="92" class="pre-context" id="pre140222441150856">
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>raise RuntimeError(</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;You called this URL via %(method)s, but the URL doesn&#39;t end &quot;</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;in a slash and you have APPEND_SLASH set. Django can&#39;t &quot;</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;redirect to the slash URL while maintaining %(method)s data. &quot;</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;Change your form to point to %(url)s (note the trailing &quot;</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;slash), or set APPEND_SLASH=False in your Django settings.&quot; % {</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&#39;method&#39;: request.method,</pre>
+                </li>
+              </ol>
+              <ol start="99" class="context-line">
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&#39;url&#39;: request.get_host() + new_path,</pre>
+                  <span>...</span>
+                </li>
+              </ol>
+              <ol start='100' class="post-context" id="post140222441150856">
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>}</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>)</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>return new_path</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre></pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>def process_response(self, request, response):</pre>
+                </li>
+                <li onclick="toggle('pre140222441150856', 'post140222441150856')">
+                  <pre>&quot;&quot;&quot;</pre>
+                </li>
+              </ol>
+            </div>
+            <div class="commands">
+              <a href="#" onclick="return varToggle(this, '140222441150856')">
+                <span>&#x25b6;</span>
+                Local vars</a>
+            </div>
+            <table class="vars" id="v140222441150856">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>new_path</td>
+                  <td class="code">
+                    <pre>&#39;/api/v1/live/record/&#39;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>request</td>
+                  <td class="code">
+                    <pre>&lt;WSGIRequest: POST &#39;/api/v1/live/record&#39;&gt;</pre>
+                  </td>
+                </tr>
+                <tr>
+                  <td>self</td>
+                  <td class="code">
+                    <pre>&lt;django.middleware.common.CommonMiddleware object at 0x7f8839f365c0&gt;</pre>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post">
+        <div id="pastebinTraceback" class="pastebin">
+          <input type="hidden" name="language" value="PythonConsole">
+          <input type="hidden" name="title"
+          value="RuntimeError at /api/v1/live/record">
+          <input type="hidden" name="source" value="Django Dpaste Agent">
+          <input type="hidden" name="poster" value="Django">
+          <textarea name="content" id="traceback_area" cols="140" rows="25">Environment:
+            Request Method: POST
+            Request URL: https://edu.51yxxg.com/api/v1/live/record
+            Django Version: 2.0.2
+            Python Version: 3.5.2
+            Installed Applications:
+            [&#39;django.contrib.admin&#39;,
+            &#39;django.contrib.auth&#39;,
+            &#39;django.contrib.contenttypes&#39;,
+            &#39;django.contrib.sessions&#39;,
+            &#39;django.contrib.messages&#39;,
+            &#39;django.contrib.staticfiles&#39;,
+            &#39;rest_framework&#39;,
+            &#39;django_mysql&#39;,
+            &#39;corsheaders&#39;,
+            &#39;util&#39;,
+            &#39;edu_user&#39;,
+            &#39;school&#39;,
+            &#39;course&#39;,
+            &#39;quiz&#39;,
+            &#39;live&#39;,
+            &#39;wechat&#39;,
+            &#39;pay&#39;,
+            &#39;service&#39;]
+            Installed Middleware:
+            [&#39;corsheaders.middleware.CorsMiddleware&#39;,
+            &#39;django.middleware.security.SecurityMiddleware&#39;,
+            &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+            &#39;django.middleware.common.CommonMiddleware&#39;,
+            &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+            &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+            &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+            &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,
+            &#39;edu.middleware.EDUAuthenticationMiddleware&#39;]
+            Traceback:
+            File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py" in inner
+            35.             response = get_response(request)
+            File "/usr/local/lib/python3.5/dist-packages/django/utils/deprecation.py" in __call__
+            93.             response = self.process_request(request)
+            File "/usr/local/lib/python3.5/dist-packages/django/middleware/common.py" in process_request
+            61.             path = self.get_full_path_with_slash(request)
+            File "/usr/local/lib/python3.5/dist-packages/django/middleware/common.py" in get_full_path_with_slash
+            99.                     &#39;url&#39;: request.get_host() + new_path,
+            Exception Type: RuntimeError at /api/v1/live/record
+            Exception Value: You called this URL via POST, but the URL doesn&#39;t end in a slash and you have APPEND_SLASH set. Django can&#39;t redirect to the slash URL while maintaining POST data. Change your form to point to edu.51yxxg.com/api/v1/live/record/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</textarea>
+          <br>
+          <br>
+          <input type="submit" value="Share this traceback on a public website">
+        </div>
+      </form>
+    </div>
+    <div id="requestinfo">
+      <h2>Request information</h2>
+      <h3 id="user-info">USER</h3>
+      <p>[unable to retrieve the current user]</p>
+      <h3 id="get-info">GET</h3>
+      <p>No GET data</p>
+      <h3 id="post-info">POST</h3>
+      <p>No POST data</p>
+      <h3 id="files-info">FILES</h3>
+      <p>No FILES data</p>
+      <h3 id="cookie-info">COOKIES</h3>
+      <p>No cookie data</p>
+      <h3 id="meta-info">META</h3>
+      <table class="req">
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CONTENT_LENGTH</td>
+            <td class="code">
+              <pre>&#39;102&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CONTENT_TYPE</td>
+            <td class="code">
+              <pre>&#39;application/json;charset=UTF-8&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_ACCEPT</td>
+            <td class="code">
+              <pre>&#39;application/json, text/plain, */*&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_ACCEPT_ENCODING</td>
+            <td class="code">
+              <pre>&#39;gzip, deflate&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_ACCEPT_LANGUAGE</td>
+            <td class="code">
+              <pre>&#39;zh-CN,zh;q=0.9&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_AUTHORIZATION</td>
+            <td class="code">
+              <pre>&#39;Token 24dab18adf0211eba61700163e12323c&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_CONNECTION</td>
+            <td class="code">
+              <pre>&#39;close&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_DNT</td>
+            <td class="code">
+              <pre>&#39;1&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_HOST</td>
+            <td class="code">
+              <pre>&#39;edu.51yxxg.com&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_ORIGIN</td>
+            <td class="code">
+              <pre>&#39;https://edu.51yxxg.com&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_REFERER</td>
+            <td class="code">
+              <pre>&#39;https://edu.51yxxg.com/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_SEC_FETCH_MODE</td>
+            <td class="code">
+              <pre>&#39;cors&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_SEC_FETCH_SITE</td>
+            <td class="code">
+              <pre>&#39;same-origin&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_USER_AGENT</td>
+            <td class="code">
+              <pre>(&#39;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) &#39;
+                &#39;Chrome/78.0.3904.108 Safari/537.36&#39;)</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_X_FORWARDED_FOR</td>
+            <td class="code">
+              <pre>&#39;112.1.49.25&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>HTTP_X_FORWARDED_PROTO</td>
+            <td class="code">
+              <pre>&#39;https&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>PATH_INFO</td>
+            <td class="code">
+              <pre>&#39;/api/v1/live/record&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>QUERY_STRING</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>RAW_URI</td>
+            <td class="code">
+              <pre>&#39;/api/v1/live/record&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>REMOTE_ADDR</td>
+            <td class="code">
+              <pre>&#39;172.16.168.223&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>REMOTE_PORT</td>
+            <td class="code">
+              <pre>&#39;34652&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>REQUEST_METHOD</td>
+            <td class="code">
+              <pre>&#39;POST&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SCRIPT_NAME</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SERVER_NAME</td>
+            <td class="code">
+              <pre>&#39;0.0.0.0&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SERVER_PORT</td>
+            <td class="code">
+              <pre>&#39;8099&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SERVER_PROTOCOL</td>
+            <td class="code">
+              <pre>&#39;HTTP/1.0&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SERVER_SOFTWARE</td>
+            <td class="code">
+              <pre>&#39;gunicorn/19.9.0&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>gunicorn.socket</td>
+            <td class="code">
+              <pre>&lt;gevent._socket3.socket at 0x7f8814e74908 object, fd=13, family=2, type=2049, proto=0&gt;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.errors</td>
+            <td class="code">
+              <pre>&lt;gunicorn.http.wsgi.WSGIErrorsWrapper object at 0x7f8814dfcda0&gt;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.file_wrapper</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.input</td>
+            <td class="code">
+              <pre>&lt;gunicorn.http.body.Body object at 0x7f8814dfc048&gt;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.multiprocess</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.multithread</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.run_once</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.url_scheme</td>
+            <td class="code">
+              <pre>&#39;https&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>wsgi.version</td>
+            <td class="code">
+              <pre>(1, 0)</pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="settings-info">Settings</h3>
+      <h4>Using settings module
+        <code>edu.settings</code>
+      </h4>
+      <table class="req">
+        <thead>
+          <tr>
+            <th>Setting</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABSOLUTE_URL_OVERRIDES</td>
+            <td class="code">
+              <pre>{}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>ADMINS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>ALLOWED_HOSTS</td>
+            <td class="code">
+              <pre>[&#39;*&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>APPEND_SLASH</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>AUTHENTICATION_BACKENDS</td>
+            <td class="code">
+              <pre>[&#39;django.contrib.auth.backends.ModelBackend&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>AUTH_PASSWORD_VALIDATORS</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>AUTH_USER_MODEL</td>
+            <td class="code">
+              <pre>&#39;auth.User&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>BASE_DIR</td>
+            <td class="code">
+              <pre>&#39;/home/zhiyu/product/edu&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CACHES</td>
+            <td class="code">
+              <pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#39;redis_cache.RedisCache&#39;,
+                    &#39;LOCATION&#39;: &#39;redis://:Zhiyu122306@r-bp1c125e22702be4.redis.rds.aliyuncs.com:6379&#39;,
+                    &#39;OPTIONS&#39;: {&#39;CONNECTION_POOL_CLASS&#39;: &#39;redis.BlockingConnectionPool&#39;,
+                      &#39;CONNECTION_POOL_CLASS_KWARGS&#39;: {&#39;max_connections&#39;: 50,
+                        &#39;timeout&#39;: 20},
+                      &#39;DB&#39;: 4,
+                      &#39;MAX_CONNECTIONS&#39;: 1000,
+                      &#39;PARSER_CLASS&#39;: &#39;redis.connection.HiredisParser&#39;,
+                      &#39;PICKLE_VERSION&#39;: -1}}}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CACHE_MIDDLEWARE_ALIAS</td>
+            <td class="code">
+              <pre>&#39;default&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CACHE_MIDDLEWARE_SECONDS</td>
+            <td class="code">
+              <pre>600</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CORS_ALLOW_CREDENTIALS</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CORS_ALLOW_HEADERS</td>
+            <td class="code">
+              <pre>(&#39;XMLHttpRequest&#39;,
+                &#39;X_FILENAME&#39;,
+                &#39;accept-encoding&#39;,
+                &#39;authorization&#39;,
+                &#39;content-type&#39;,
+                &#39;dnt&#39;,
+                &#39;origin&#39;,
+                &#39;user-agent&#39;,
+                &#39;x-csrftoken&#39;,
+                &#39;x-requested-with&#39;,
+                &#39;Pragma&#39;)</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CORS_ALLOW_METHODS</td>
+            <td class="code">
+              <pre>(&#39;DELETE&#39;, &#39;GET&#39;, &#39;OPTIONS&#39;, &#39;PATCH&#39;, &#39;POST&#39;, &#39;PUT&#39;, &#39;VIEW&#39;)</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CORS_ORIGIN_ALLOW_ALL</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CORS_ORIGIN_WHITELIST</td>
+            <td class="code">
+              <pre>&#39;*&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_AGE</td>
+            <td class="code">
+              <pre>31449600</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_DOMAIN</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_HTTPONLY</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_NAME</td>
+            <td class="code">
+              <pre>&#39;csrftoken&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_PATH</td>
+            <td class="code">
+              <pre>&#39;/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_COOKIE_SECURE</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_FAILURE_VIEW</td>
+            <td class="code">
+              <pre>&#39;django.views.csrf.csrf_failure&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_HEADER_NAME</td>
+            <td class="code">
+              <pre>&#39;HTTP_X_CSRFTOKEN&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_TRUSTED_ORIGINS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>CSRF_USE_SESSIONS</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATABASES</td>
+            <td class="code">
+              <pre>{&#39;banxue&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
+                    &#39;AUTOCOMMIT&#39;: True,
+                    &#39;CONN_MAX_AGE&#39;: 0,
+                    &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+                    &#39;HOST&#39;: &#39;rm-bp16hk719217i74757o.mysql.rds.aliyuncs.com&#39;,
+                    &#39;NAME&#39;: &#39;banxue_release&#39;,
+                    &#39;OPTIONS&#39;: {&#39;charset&#39;: &#39;utf8mb4&#39;,
+                      &#39;init_command&#39;: &quot;SET sql_mode=&#39;STRICT_TRANS_TABLES&#39;, &quot;
+                      &#39;innodb_strict_mode=1&#39;},
+                    &#39;PASSWORD&#39;: &#39;********************&#39;,
+                    &#39;PORT&#39;: &#39;3306&#39;,
+                    &#39;TEST&#39;: {&#39;CHARSET&#39;: None,
+                      &#39;COLLATION&#39;: None,
+                      &#39;MIRROR&#39;: None,
+                      &#39;NAME&#39;: None},
+                    &#39;TIME_ZONE&#39;: None,
+                    &#39;USER&#39;: &#39;zhiyu&#39;},
+                  &#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
+                    &#39;AUTOCOMMIT&#39;: True,
+                    &#39;CONN_MAX_AGE&#39;: 0,
+                    &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+                    &#39;HOST&#39;: &#39;rm-bp16hk719217i74757o.mysql.rds.aliyuncs.com&#39;,
+                    &#39;NAME&#39;: &#39;edu_release&#39;,
+                    &#39;OPTIONS&#39;: {&#39;charset&#39;: &#39;utf8mb4&#39;,
+                      &#39;init_command&#39;: &quot;SET sql_mode=&#39;STRICT_TRANS_TABLES&#39;, &quot;
+                      &#39;innodb_strict_mode=1&#39;},
+                    &#39;PASSWORD&#39;: &#39;********************&#39;,
+                    &#39;PORT&#39;: &#39;3306&#39;,
+                    &#39;TEST&#39;: {&#39;CHARSET&#39;: None,
+                      &#39;COLLATION&#39;: None,
+                      &#39;MIRROR&#39;: None,
+                      &#39;NAME&#39;: None},
+                    &#39;TIME_ZONE&#39;: None,
+                    &#39;USER&#39;: &#39;zhiyu&#39;}}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATABASE_ROUTERS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+            <td class="code">
+              <pre>2621440</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+            <td class="code">
+              <pre>1000</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATETIME_FORMAT</td>
+            <td class="code">
+              <pre>&#39;N j, Y, P&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATETIME_INPUT_FORMATS</td>
+            <td class="code">
+              <pre>[&#39;%Y-%m-%d %H:%M:%S&#39;,
+                &#39;%Y-%m-%d %H:%M:%S.%f&#39;,
+                &#39;%Y-%m-%d %H:%M&#39;,
+                &#39;%Y-%m-%d&#39;,
+                &#39;%m/%d/%Y %H:%M:%S&#39;,
+                &#39;%m/%d/%Y %H:%M:%S.%f&#39;,
+                &#39;%m/%d/%Y %H:%M&#39;,
+                &#39;%m/%d/%Y&#39;,
+                &#39;%m/%d/%y %H:%M:%S&#39;,
+                &#39;%m/%d/%y %H:%M:%S.%f&#39;,
+                &#39;%m/%d/%y %H:%M&#39;,
+                &#39;%m/%d/%y&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATE_FORMAT</td>
+            <td class="code">
+              <pre>&#39;N j, Y&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DATE_INPUT_FORMATS</td>
+            <td class="code">
+              <pre>[&#39;%Y-%m-%d&#39;,
+                &#39;%m/%d/%Y&#39;,
+                &#39;%m/%d/%y&#39;,
+                &#39;%b %d %Y&#39;,
+                &#39;%b %d, %Y&#39;,
+                &#39;%d %b %Y&#39;,
+                &#39;%d %b, %Y&#39;,
+                &#39;%B %d %Y&#39;,
+                &#39;%B %d, %Y&#39;,
+                &#39;%d %B %Y&#39;,
+                &#39;%d %B, %Y&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEBUG</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DECIMAL_SEPARATOR</td>
+            <td class="code">
+              <pre>&#39;.&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_CHARSET</td>
+            <td class="code">
+              <pre>&#39;utf-8&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_CONTENT_TYPE</td>
+            <td class="code">
+              <pre>&#39;text/html&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+            <td class="code">
+              <pre>&#39;django.views.debug.SafeExceptionReporterFilter&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_FILE_STORAGE</td>
+            <td class="code">
+              <pre>&#39;django.core.files.storage.FileSystemStorage&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_FROM_EMAIL</td>
+            <td class="code">
+              <pre>&#39;webmaster@localhost&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_INDEX_TABLESPACE</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DEFAULT_TABLESPACE</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>DISALLOWED_USER_AGENTS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EDU</td>
+            <td class="code">
+              <pre>{&#39;api_url_prefix_v1&#39;: &#39;********************&#39;,
+                  &#39;host&#39;: {&#39;host_string&#39;: &#39;zhiyu@172.16.168.223&#39;,
+                    &#39;password&#39;: &#39;********************&#39;,
+                    &#39;web&#39;: {&#39;command&#39;: &#39;git pull&#39;, &#39;pwd&#39;: &#39;/web/XueLiAnPlatform&#39;}},
+                  &#39;qiniu&#39;: {&#39;access_key&#39;: &#39;********************&#39;,
+                    &#39;access_secret&#39;: &#39;********************&#39;,
+                    &#39;access_server&#39;: &#39;https://store.51yxxg.com&#39;,
+                    &#39;bucket_name&#39;: &#39;banxue&#39;},
+                  &#39;redis&#39;: {&#39;db&#39;: 1,
+                    &#39;host&#39;: &#39;r-bp1d9b2ec391e054.redis.rds.aliyuncs.com&#39;,
+                    &#39;password&#39;: &#39;********************&#39;,
+                    &#39;port&#39;: 6379},
+                  &#39;server&#39;: &#39;https://edu.51yxxg.com&#39;,
+                  &#39;sms&#39;: {&#39;access_key_id&#39;: &#39;********************&#39;,
+                    &#39;access_key_secret&#39;: &#39;********************&#39;},
+                  &#39;tag&#39;: &#39;&#39;,
+                  &#39;wechat_apiclient_cert&#39;: &#39;********************&#39;,
+                  &#39;wechat_apiclient_key&#39;: &#39;********************&#39;}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_BACKEND</td>
+            <td class="code">
+              <pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_HOST</td>
+            <td class="code">
+              <pre>&#39;localhost&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_HOST_PASSWORD</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_HOST_USER</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_PORT</td>
+            <td class="code">
+              <pre>25</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_SSL_CERTFILE</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_SSL_KEYFILE</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_SUBJECT_PREFIX</td>
+            <td class="code">
+              <pre>&#39;[Django] &#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_TIMEOUT</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_USE_LOCALTIME</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_USE_SSL</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>EMAIL_USE_TLS</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>ENCRYPT_MAGIC_CODE</td>
+            <td class="code">
+              <pre>&#39;edu@2018&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_CHARSET</td>
+            <td class="code">
+              <pre>&#39;utf-8&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_UPLOAD_HANDLERS</td>
+            <td class="code">
+              <pre>[&#39;django.core.files.uploadhandler.MemoryFileUploadHandler&#39;,
+                &#39;django.core.files.uploadhandler.TemporaryFileUploadHandler&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+            <td class="code">
+              <pre>2621440</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_UPLOAD_PERMISSIONS</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FILE_UPLOAD_TEMP_DIR</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FIRST_DAY_OF_WEEK</td>
+            <td class="code">
+              <pre>0</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FIXTURE_DIRS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FORCE_SCRIPT_NAME</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FORMAT_MODULE_PATH</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>FORM_RENDERER</td>
+            <td class="code">
+              <pre>&#39;django.forms.renderers.DjangoTemplates&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>IGNORABLE_404_URLS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>INSTALLED_APPS</td>
+            <td class="code">
+              <pre>[&#39;django.contrib.admin&#39;,
+                &#39;django.contrib.auth&#39;,
+                &#39;django.contrib.contenttypes&#39;,
+                &#39;django.contrib.sessions&#39;,
+                &#39;django.contrib.messages&#39;,
+                &#39;django.contrib.staticfiles&#39;,
+                &#39;rest_framework&#39;,
+                &#39;django_mysql&#39;,
+                &#39;corsheaders&#39;,
+                &#39;util&#39;,
+                &#39;edu_user&#39;,
+                &#39;school&#39;,
+                &#39;course&#39;,
+                &#39;quiz&#39;,
+                &#39;live&#39;,
+                &#39;wechat&#39;,
+                &#39;pay&#39;,
+                &#39;service&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>INTERNAL_IPS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGES</td>
+            <td class="code">
+              <pre>[(&#39;af&#39;, &#39;Afrikaans&#39;),
+                (&#39;ar&#39;, &#39;Arabic&#39;),
+                (&#39;ast&#39;, &#39;Asturian&#39;),
+                (&#39;az&#39;, &#39;Azerbaijani&#39;),
+                (&#39;bg&#39;, &#39;Bulgarian&#39;),
+                (&#39;be&#39;, &#39;Belarusian&#39;),
+                (&#39;bn&#39;, &#39;Bengali&#39;),
+                (&#39;br&#39;, &#39;Breton&#39;),
+                (&#39;bs&#39;, &#39;Bosnian&#39;),
+                (&#39;ca&#39;, &#39;Catalan&#39;),
+                (&#39;cs&#39;, &#39;Czech&#39;),
+                (&#39;cy&#39;, &#39;Welsh&#39;),
+                (&#39;da&#39;, &#39;Danish&#39;),
+                (&#39;de&#39;, &#39;German&#39;),
+                (&#39;dsb&#39;, &#39;Lower Sorbian&#39;),
+                (&#39;el&#39;, &#39;Greek&#39;),
+                (&#39;en&#39;, &#39;English&#39;),
+                (&#39;en-au&#39;, &#39;Australian English&#39;),
+                (&#39;en-gb&#39;, &#39;British English&#39;),
+                (&#39;eo&#39;, &#39;Esperanto&#39;),
+                (&#39;es&#39;, &#39;Spanish&#39;),
+                (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;),
+                (&#39;es-co&#39;, &#39;Colombian Spanish&#39;),
+                (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;),
+                (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;),
+                (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),
+                (&#39;et&#39;, &#39;Estonian&#39;),
+                (&#39;eu&#39;, &#39;Basque&#39;),
+                (&#39;fa&#39;, &#39;Persian&#39;),
+                (&#39;fi&#39;, &#39;Finnish&#39;),
+                (&#39;fr&#39;, &#39;French&#39;),
+                (&#39;fy&#39;, &#39;Frisian&#39;),
+                (&#39;ga&#39;, &#39;Irish&#39;),
+                (&#39;gd&#39;, &#39;Scottish Gaelic&#39;),
+                (&#39;gl&#39;, &#39;Galician&#39;),
+                (&#39;he&#39;, &#39;Hebrew&#39;),
+                (&#39;hi&#39;, &#39;Hindi&#39;),
+                (&#39;hr&#39;, &#39;Croatian&#39;),
+                (&#39;hsb&#39;, &#39;Upper Sorbian&#39;),
+                (&#39;hu&#39;, &#39;Hungarian&#39;),
+                (&#39;ia&#39;, &#39;Interlingua&#39;),
+                (&#39;id&#39;, &#39;Indonesian&#39;),
+                (&#39;io&#39;, &#39;Ido&#39;),
+                (&#39;is&#39;, &#39;Icelandic&#39;),
+                (&#39;it&#39;, &#39;Italian&#39;),
+                (&#39;ja&#39;, &#39;Japanese&#39;),
+                (&#39;ka&#39;, &#39;Georgian&#39;),
+                (&#39;kab&#39;, &#39;Kabyle&#39;),
+                (&#39;kk&#39;, &#39;Kazakh&#39;),
+                (&#39;km&#39;, &#39;Khmer&#39;),
+                (&#39;kn&#39;, &#39;Kannada&#39;),
+                (&#39;ko&#39;, &#39;Korean&#39;),
+                (&#39;lb&#39;, &#39;Luxembourgish&#39;),
+                (&#39;lt&#39;, &#39;Lithuanian&#39;),
+                (&#39;lv&#39;, &#39;Latvian&#39;),
+                (&#39;mk&#39;, &#39;Macedonian&#39;),
+                (&#39;ml&#39;, &#39;Malayalam&#39;),
+                (&#39;mn&#39;, &#39;Mongolian&#39;),
+                (&#39;mr&#39;, &#39;Marathi&#39;),
+                (&#39;my&#39;, &#39;Burmese&#39;),
+                (&#39;nb&#39;, &#39;Norwegian Bokmål&#39;),
+                (&#39;ne&#39;, &#39;Nepali&#39;),
+                (&#39;nl&#39;, &#39;Dutch&#39;),
+                (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;),
+                (&#39;os&#39;, &#39;Ossetic&#39;),
+                (&#39;pa&#39;, &#39;Punjabi&#39;),
+                (&#39;pl&#39;, &#39;Polish&#39;),
+                (&#39;pt&#39;, &#39;Portuguese&#39;),
+                (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;),
+                (&#39;ro&#39;, &#39;Romanian&#39;),
+                (&#39;ru&#39;, &#39;Russian&#39;),
+                (&#39;sk&#39;, &#39;Slovak&#39;),
+                (&#39;sl&#39;, &#39;Slovenian&#39;),
+                (&#39;sq&#39;, &#39;Albanian&#39;),
+                (&#39;sr&#39;, &#39;Serbian&#39;),
+                (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;),
+                (&#39;sv&#39;, &#39;Swedish&#39;),
+                (&#39;sw&#39;, &#39;Swahili&#39;),
+                (&#39;ta&#39;, &#39;Tamil&#39;),
+                (&#39;te&#39;, &#39;Telugu&#39;),
+                (&#39;th&#39;, &#39;Thai&#39;),
+                (&#39;tr&#39;, &#39;Turkish&#39;),
+                (&#39;tt&#39;, &#39;Tatar&#39;),
+                (&#39;udm&#39;, &#39;Udmurt&#39;),
+                (&#39;uk&#39;, &#39;Ukrainian&#39;),
+                (&#39;ur&#39;, &#39;Urdu&#39;),
+                (&#39;vi&#39;, &#39;Vietnamese&#39;),
+                (&#39;zh-hans&#39;, &#39;Simplified Chinese&#39;),
+                (&#39;zh-hant&#39;, &#39;Traditional Chinese&#39;)]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGES_BIDI</td>
+            <td class="code">
+              <pre>[&#39;he&#39;, &#39;ar&#39;, &#39;fa&#39;, &#39;ur&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGE_CODE</td>
+            <td class="code">
+              <pre>&#39;en-us&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGE_COOKIE_AGE</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGE_COOKIE_DOMAIN</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGE_COOKIE_NAME</td>
+            <td class="code">
+              <pre>&#39;django_language&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LANGUAGE_COOKIE_PATH</td>
+            <td class="code">
+              <pre>&#39;/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOCALE_PATHS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOGGING</td>
+            <td class="code">
+              <pre>{&#39;disable_existing_loggers&#39;: False,
+                  &#39;filters&#39;: {&#39;require_debug_false&#39;: {&#39;()&#39;: &#39;django.utils.log.RequireDebugFalse&#39;}},
+                  &#39;formatters&#39;: {&#39;custom&#39;: {&#39;format&#39;: &#39;[%(asctime)s] %(levelname)s %(pathname)s &#39;
+                      &#39;%(funcName)s %(lineno)d &gt;&gt; %(message)s&#39;},
+                    &#39;simple&#39;: {&#39;format&#39;: &#39;[%(asctime)s] %(levelname)s %(message)s&#39;},
+                    &#39;verbose&#39;: {&#39;format&#39;: &#39;[%(asctime)s] %(levelname)s &#39;
+                      &#39;[%(pathname)s %(funcName)s %(lineno)d] &#39;
+                      &#39;%(process)d:%(thread)d %(message)s&#39;}},
+                  &#39;handlers&#39;: {&#39;admin_school&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/admin_school.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;admin_user&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/admin_user.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;auth-middleware&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/auth-middleware.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;base_view&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/base_view.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;console&#39;: {&#39;class&#39;: &#39;logging.StreamHandler&#39;,
+                      &#39;formatter&#39;: &#39;simple&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;},
+                    &#39;course&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/course.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;exception_handler&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/exception_handler.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;live&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/live.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;live_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/live_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;mail_admins&#39;: {&#39;class&#39;: &#39;django.utils.log.AdminEmailHandler&#39;,
+                      &#39;filters&#39;: [&#39;require_debug_false&#39;],
+                      &#39;level&#39;: &#39;ERROR&#39;},
+                    &#39;pay&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/pay.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;qiniu_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/qiniu_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;quiz&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/quiz.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;redis_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/redis_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;school&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/school.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;user&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/user.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;user_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/user_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;util&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/util.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;wechat&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/wechat.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;wechat_pay_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/wechat_pay_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520},
+                    &#39;wx_helper&#39;: {&#39;backupCount&#39;: 3,
+                      &#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,
+                      &#39;encoding&#39;: &#39;utf8&#39;,
+                      &#39;filename&#39;: &#39;/tmp/log/edu/wx_helper.log&#39;,
+                      &#39;formatter&#39;: &#39;verbose&#39;,
+                      &#39;level&#39;: &#39;INFO&#39;,
+                      &#39;maxBytes&#39;: 20971520}},
+                  &#39;loggers&#39;: {&#39;admin_school&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;admin_school&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;admin_user&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;admin_user&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;auth-middleware&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;auth-middleware&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;base_view&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;base_view&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;course&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;course&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;django.db.backends&#39;: {&#39;handlers&#39;: [&#39;console&#39;],
+                      &#39;level&#39;: &#39;ERROR&#39;,
+                      &#39;propagate&#39;: True},
+                    &#39;django.request&#39;: {&#39;handlers&#39;: [&#39;console&#39;],
+                      &#39;level&#39;: &#39;ERROR&#39;,
+                      &#39;propagate&#39;: True},
+                    &#39;exception_handler&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;exception_handler&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;live&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;live&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;live_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;live_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;pay&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;pay&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;qiniu_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;qiniu_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;quiz&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;quiz&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;redis_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;redis_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;school&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;school&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;user&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;user&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;user_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;user_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;util&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;util&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;wechat&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;wechat&#39;], &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;wechat_pay_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;wechat_pay_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;},
+                    &#39;wx_helper&#39;: {&#39;handlers&#39;: [&#39;console&#39;, &#39;wx_helper&#39;],
+                      &#39;level&#39;: &#39;DEBUG&#39;}},
+                  &#39;version&#39;: 1}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOGGING_CONFIG</td>
+            <td class="code">
+              <pre>&#39;logging.config.dictConfig&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOGIN_REDIRECT_URL</td>
+            <td class="code">
+              <pre>&#39;/accounts/profile/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOGIN_URL</td>
+            <td class="code">
+              <pre>&#39;/accounts/login/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>LOGOUT_REDIRECT_URL</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MAIN_LOG_NAME</td>
+            <td class="code">
+              <pre>&#39;edu&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MANAGERS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MEDIA_ROOT</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MEDIA_URL</td>
+            <td class="code">
+              <pre>&#39;&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MESSAGE_STORAGE</td>
+            <td class="code">
+              <pre>&#39;django.contrib.messages.storage.fallback.FallbackStorage&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MIDDLEWARE</td>
+            <td class="code">
+              <pre>[&#39;corsheaders.middleware.CorsMiddleware&#39;,
+                &#39;django.middleware.security.SecurityMiddleware&#39;,
+                &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+                &#39;django.middleware.common.CommonMiddleware&#39;,
+                &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+                &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+                &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+                &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,
+                &#39;edu.middleware.EDUAuthenticationMiddleware&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MIGRATION_MODULES</td>
+            <td class="code">
+              <pre>{}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>MONTH_DAY_FORMAT</td>
+            <td class="code">
+              <pre>&#39;F j&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>NUMBER_GROUPING</td>
+            <td class="code">
+              <pre>0</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>PASSWORD_HASHERS</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>PREPEND_WWW</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>REST_FRAMEWORK</td>
+            <td class="code">
+              <pre>{&#39;DATETIME_FORMAT&#39;: &#39;%Y-%m-%d %H:%M:%S&#39;,
+                  &#39;DEFAULT_AUTHENTICATION_CLASSES&#39;: (&#39;edu.authentication.EDUTokenAuthentication&#39;,),
+                  &#39;DEFAULT_PAGINATION_CLASS&#39;: &#39;edu.pagination.BXCommonPagination&#39;,
+                  &#39;DEFAULT_PERMISSION_CLASSES&#39;: (&#39;edu.permissions.BXViewPermissions&#39;,),
+                  &#39;EXCEPTION_HANDLER&#39;: &#39;edu.exceptions.custom_exception_handler&#39;,
+                  &#39;FILTER_BACKEND&#39;: &#39;rest_framework.filters.DjangoFilterBackend&#39;,
+                  &#39;PAGE_SIZE&#39;: 8}</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>ROOT_URLCONF</td>
+            <td class="code">
+              <pre>&#39;edu.urls&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECRET_KEY</td>
+            <td class="code">
+              <pre>&#39;********************&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_BROWSER_XSS_FILTER</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_HSTS_PRELOAD</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_HSTS_SECONDS</td>
+            <td class="code">
+              <pre>0</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_PROXY_SSL_HEADER</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_REDIRECT_EXEMPT</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_SSL_HOST</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SECURE_SSL_REDIRECT</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SERVER_EMAIL</td>
+            <td class="code">
+              <pre>&#39;root@localhost&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_CACHE_ALIAS</td>
+            <td class="code">
+              <pre>&#39;default&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_AGE</td>
+            <td class="code">
+              <pre>1209600</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_DOMAIN</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_HTTPONLY</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_NAME</td>
+            <td class="code">
+              <pre>&#39;sessionid&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_PATH</td>
+            <td class="code">
+              <pre>&#39;/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_COOKIE_SECURE</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_ENGINE</td>
+            <td class="code">
+              <pre>&#39;django.contrib.sessions.backends.db&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_FILE_PATH</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_SAVE_EVERY_REQUEST</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SESSION_SERIALIZER</td>
+            <td class="code">
+              <pre>&#39;django.contrib.sessions.serializers.JSONSerializer&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SETTINGS_MODULE</td>
+            <td class="code">
+              <pre>&#39;edu.settings&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SHORT_DATETIME_FORMAT</td>
+            <td class="code">
+              <pre>&#39;m/d/Y P&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SHORT_DATE_FORMAT</td>
+            <td class="code">
+              <pre>&#39;m/d/Y&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SIGNING_BACKEND</td>
+            <td class="code">
+              <pre>&#39;django.core.signing.TimestampSigner&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>SILENCED_SYSTEM_CHECKS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>STATICFILES_DIRS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>STATICFILES_FINDERS</td>
+            <td class="code">
+              <pre>[&#39;django.contrib.staticfiles.finders.FileSystemFinder&#39;,
+                &#39;django.contrib.staticfiles.finders.AppDirectoriesFinder&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>STATICFILES_STORAGE</td>
+            <td class="code">
+              <pre>&#39;django.contrib.staticfiles.storage.StaticFilesStorage&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>STATIC_ROOT</td>
+            <td class="code">
+              <pre>None</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>STATIC_URL</td>
+            <td class="code">
+              <pre>&#39;/static/&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TEMPLATES</td>
+            <td class="code">
+              <pre>[{&#39;APP_DIRS&#39;: True,
+                  &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+                  &#39;DIRS&#39;: [],
+                  &#39;OPTIONS&#39;: {&#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,
+                    &#39;django.template.context_processors.request&#39;,
+                    &#39;django.contrib.auth.context_processors.auth&#39;,
+                    &#39;django.contrib.messages.context_processors.messages&#39;]}}]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TEST_NON_SERIALIZED_APPS</td>
+            <td class="code">
+              <pre>[]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TEST_RUNNER</td>
+            <td class="code">
+              <pre>&#39;django.test.runner.DiscoverRunner&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>THOUSAND_SEPARATOR</td>
+            <td class="code">
+              <pre>&#39;,&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TIME_FORMAT</td>
+            <td class="code">
+              <pre>&#39;P&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TIME_INPUT_FORMATS</td>
+            <td class="code">
+              <pre>[&#39;%H:%M:%S&#39;, &#39;%H:%M:%S.%f&#39;, &#39;%H:%M&#39;]</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>TIME_ZONE</td>
+            <td class="code">
+              <pre>&#39;Asia/Shanghai&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_ETAGS</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_I18N</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_L10N</td>
+            <td class="code">
+              <pre>True</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_THOUSAND_SEPARATOR</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_TZ</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_X_FORWARDED_HOST</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>USE_X_FORWARDED_PORT</td>
+            <td class="code">
+              <pre>False</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>WSGI_APPLICATION</td>
+            <td class="code">
+              <pre>&#39;edu.wsgi.application&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>X_FRAME_OPTIONS</td>
+            <td class="code">
+              <pre>&#39;SAMEORIGIN&#39;</pre>
+            </td>
+          </tr>
+          <tr>
+            <td>YEAR_MONTH_FORMAT</td>
+            <td class="code">
+              <pre>&#39;F Y&#39;</pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="explanation">
+      <p>You're seeing this error because you have
+        <code>DEBUG = True</code>
+        in your
+        Django settings file. Change that to
+        <code>False</code>
+        , and Django will
+        display a standard page generated by the handler for this status code.</p>
+    </div>
+  </body>
+</html>
+
+<p>信息量有点大……怎么感觉服务器在像我承认错误，把家底都掏出来了……不过安全意识不错，密码还是保护的好好的。</p>
+<h2 id="这时自然想到发送请求："><a href="#这时自然想到发送请求：" class="headerlink" title="这时自然想到发送请求："></a>这时自然想到发送请求：</h2><p><img src="http://cdnjson.com/images/2021/07/08/QQ20210708230042.png"></p>
+<p>服务器非常高兴地接收了：</p>
+<p><img src="http://cdnjson.com/images/2021/07/08/QQ20210708230052.png"></p>
+<p>于是再发送请求：</p>
+<h2 id="GET-pass-php-HTTP-1-1"><a href="#GET-pass-php-HTTP-1-1" class="headerlink" title="GET /pass.php HTTP/1.1"></a>GET /pass.php HTTP/1.1</h2><p>服务器返回：</p>
+<p><img src="http://cdnjson.com/images/2021/07/08/QQ20210708230322.png"></p>
+<p>MIME格式为image/jpeg。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>php，一句话木马，三个雷同</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44632668/article/details/97818432">1</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39190897/article/details/86772765">2</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38684504/article/details/89876466">3</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Lonely-/p/14132549.html">中国菜刀简介</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lgh344902118/p/6955635.html">Django漏洞利用</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">沫欢</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://whypilotxia.github.io/2021/07/08/%E9%9A%8F%E7%AC%94/">https://whypilotxia.github.io/2021/07/08/%E9%9A%8F%E7%AC%94/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://whypilotxia.github.io" target="_blank">WhyPilotXia的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9B%BE%E7%89%87/">图片</a><a class="post-meta__tags" href="/tags/%E5%B0%81%E9%9D%A2/">封面</a><a class="post-meta__tags" href="/tags/%E6%B3%A8%E5%85%A5/">注入</a><a class="post-meta__tags" href="/tags/%E7%8E%8B%E8%80%85/">王者</a><a class="post-meta__tags" href="/tags/php/">php</a><a class="post-meta__tags" href="/tags/%E8%AF%B7%E6%B1%82/">请求</a></div><div class="post_share"><div class="social-share" data-image="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/weixin.png" target="_blank"><img class="post-qr-code-img" src="/img/weixin.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/07/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89/"><img class="next-cover" src="http://cdnjson.com/images/2021/07/08/20181215231500_svhhc.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">个人博客存在的意义</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/07/08/butterfly/" title="butterfly主题"><img class="cover" src="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-08</div><div class="title">butterfly主题</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">沫欢</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/WhyPilotXia"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:2743218818@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><s>卷出花样，卷出未来！</s> 躺平吧，因为几场人为的意外会毁了你努力的一切</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8D%9A%E5%AE%A2%E5%B0%81%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">1.如何自定义博客封面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%85%B3%E4%BA%8E%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80"><span class="toc-number">2.</span> <span class="toc-text">2.关于王者荣耀</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E7%A0%94%E7%A9%B6%E5%AD%A6%E5%8E%86%E6%A1%88%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0"><span class="toc-number">3.</span> <span class="toc-text">3.研究学历案学习平台</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#GET-api-v1-HTTP-1-1"><span class="toc-number">3.1.</span> <span class="toc-text">GET &#x2F;api&#x2F;v1&#x2F; HTTP&#x2F;1.1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#summary"><span class="toc-number">4.</span> <span class="toc-text">Page not found
+        (404)
+      </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#GET-api-v1-live-HTTP-1-1"><span class="toc-number">4.1.</span> <span class="toc-text">GET &#x2F;api&#x2F;v1&#x2F;live&#x2F; HTTP&#x2F;1.1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#summary"><span class="toc-number">5.</span> <span class="toc-text">Page not found
+        (404)
+      </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#POST-api-v1-live-record-HTTP-1-1"><span class="toc-number">5.1.</span> <span class="toc-text">POST &#x2F;api&#x2F;v1&#x2F;live&#x2F;record HTTP&#x2F;1.1</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#summary"><span class="toc-number">6.</span> <span class="toc-text">RuntimeError
+        at &#x2F;api&#x2F;v1&#x2F;live&#x2F;record</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#traceback"><span class="toc-number">6.1.</span> <span class="toc-text">Traceback
+        
+          Switch to copy-and-paste view
+        
+      </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#requestinfo"><span class="toc-number">6.2.</span> <span class="toc-text">Request information</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#user-info"><span class="toc-number">6.2.1.</span> <span class="toc-text">USER</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get-info"><span class="toc-number">6.2.2.</span> <span class="toc-text">GET</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#post-info"><span class="toc-number">6.2.3.</span> <span class="toc-text">POST</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#files-info"><span class="toc-number">6.2.4.</span> <span class="toc-text">FILES</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cookie-info"><span class="toc-number">6.2.5.</span> <span class="toc-text">COOKIES</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#meta-info"><span class="toc-number">6.2.6.</span> <span class="toc-text">META</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#settings-info"><span class="toc-number">6.2.7.</span> <span class="toc-text">Settings</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#requestinfo"><span class="toc-number">6.2.7.1.</span> <span class="toc-text">Using settings module
+        edu.settings
+      </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E6%97%B6%E8%87%AA%E7%84%B6%E6%83%B3%E5%88%B0%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%EF%BC%9A"><span class="toc-number">6.3.</span> <span class="toc-text">这时自然想到发送请求：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET-pass-php-HTTP-1-1"><span class="toc-number">6.4.</span> <span class="toc-text">GET &#x2F;pass.php HTTP&#x2F;1.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">6.5.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/08/%E9%9A%8F%E7%AC%94/" title="随笔"><img src="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随笔"/></a><div class="content"><a class="title" href="/2021/07/08/%E9%9A%8F%E7%AC%94/" title="随笔">随笔</a><time datetime="2021-07-08T14:41:39.000Z" title="发表于 2021-07-08 22:41:39">2021-07-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89/" title="个人博客存在的意义"><img src="http://cdnjson.com/images/2021/07/08/20181215231500_svhhc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人博客存在的意义"/></a><div class="content"><a class="title" href="/2021/07/08/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89/" title="个人博客存在的意义">个人博客存在的意义</a><time datetime="2021-07-08T07:20:12.000Z" title="发表于 2021-07-08 15:20:12">2021-07-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/08/butterfly/" title="butterfly主题"><img src="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题"/></a><div class="content"><a class="title" href="/2021/07/08/butterfly/" title="butterfly主题">butterfly主题</a><time datetime="2021-07-08T04:55:28.000Z" title="发表于 2021-07-08 12:55:28">2021-07-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/07/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" title="博客主题优化"><img src="http://cdnjson.com/images/2021/07/08/20210126081908_YX3iX.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客主题优化"/></a><div class="content"><a class="title" href="/2021/07/07/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" title="博客主题优化">博客主题优化</a><time datetime="2021-07-07T11:32:39.000Z" title="发表于 2021-07-07 19:32:39">2021-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/07/%E9%9F%B3%E4%B9%90%E6%8F%92%E5%85%A5%E6%B5%8B%E8%AF%95/" title="音乐插入测试"><img src="http://cdnjson.com/images/2021/07/08/20181223181746_qccyx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="音乐插入测试"/></a><div class="content"><a class="title" href="/2021/07/07/%E9%9F%B3%E4%B9%90%E6%8F%92%E5%85%A5%E6%B5%8B%E8%AF%95/" title="音乐插入测试">音乐插入测试</a><time datetime="2021-07-07T09:54:28.000Z" title="发表于 2021-07-07 17:54:28">2021-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 沫欢</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">沫欢</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
